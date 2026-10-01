@@ -1,0 +1,10 @@
+.git
+.env
+__pycache__
+.pytest_cache
+models/*.db
+models/artifacts
+models/cache
+data/raw/*
+data/synthetic/*
+notebooks/.ipynb_checkpoints

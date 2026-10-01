@@ -1,0 +1,45 @@
+# Python 3.11+ required. Versions are pinned as a mutually compatible set:
+#   scikit-learn 1.5.x <-> imbalanced-learn 0.12.x <-> xgboost 2.1.x <-> mlflow 2.16.x
+# Verify with `pip install -r requirements.txt && pip check` on your platform.
+
+# --- Data science / ML ---
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.1
+scikit-learn==1.5.2
+joblib==1.4.2
+cloudpickle==3.1.0
+pyarrow==17.0.0
+imbalanced-learn==0.12.4
+xgboost==2.1.3
+lightgbm==4.5.0
+optuna==4.1.0
+
+# --- Experiment tracking / registry ---
+mlflow==2.16.2
+SQLAlchemy==2.0.36
+# psycopg2-binary==2.9.10   # uncomment when using a PostgreSQL MLFLOW_TRACKING_URI
+
+# --- Configuration ---
+pydantic==2.10.3
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# --- API microservice ---
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.19
+httpx==0.28.1
+
+# --- Frontend ---
+streamlit==1.40.2
+requests==2.32.3
+plotly==5.24.1
+matplotlib==3.9.3
+seaborn==0.13.2
+
+# --- Notebook client & tests ---
+jupyter==1.1.1
+nbformat==5.10.4
+pytest==8.3.4
+pytest-asyncio==0.24.0
